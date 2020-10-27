@@ -26,7 +26,8 @@ retrieve the URLs for different microservices by microservice name which defined
 This is a gateway server to handle the authentication/authorization and the communication between microservices.
 This project is created without implementing the business for authentication/authorization for testing.
 This service register itself in eureka naming server.
-The API gateway know the services URLs which should be called for each request from the eureka naming server
+The API gateway know the services URLs which should be called for each request from the eureka naming server.
+This service register  the requests tracing by zipkins and rabbitMQ.
  
 - limits-service
 
@@ -37,13 +38,14 @@ This service register itself in eureka naming server.
 
 This service used to test the rest template, feign rest client, rubbon client load balancer. It callect the currency exchange rate information from external API
 This service register itself in eureka naming server.
+This service register  the requests tracing by zipkins and rabbitMQ
 
 - currency-conversion-service
 
 This service used to call the currency-exchange-service to get the currency exchange rate.
 This service created to test the rest template, feign rest client, rubbon client load balancer.
 This service register itself in eureka naming server.
-
+This service register  the requests tracing by zipkins and rabbitMQ
 
 Tested inside those projects:
 - JPA
