@@ -47,6 +47,14 @@ This service created to test the rest template, feign rest client, rubbon client
 This service register itself in eureka naming server.
 This service register  the requests tracing by zipkins and rabbitMQ
 
+Starting orders for those services:
+- spring-cloud-config-server
+- eureka naming server
+- zuul-api-gateway-server
+- limits-service
+- currency-exchange-service
+- currency-conversion-service
+
 Tested inside those projects:
 - JPA
 - Spring cloud configuration server read from git repository
